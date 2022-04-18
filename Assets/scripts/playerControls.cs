@@ -62,15 +62,5 @@ public class playerControls : MonoBehaviour
         
     }// end update
 
-    private void PointToMouse()
-    {
-        movedir = Vector3.MoveTowards(transform.position, GetWorldPosition(), maxSpeed * Time.deltaTime);
-    }
-    private Vector3 GetWorldPosition() // mouse follow
-    {
-        return mainCamera.WorldToScreenPoint(Input.mousePosition);
-    }
-    
-
 }
 

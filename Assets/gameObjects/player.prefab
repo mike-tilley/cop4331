@@ -982,7 +982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0503891246d3aa48b03a90f46dce9fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1769629540153418575}
+  controller: {fileID: 0}
   cam: {fileID: 0}
   speed: 6
   turnTime: 0.1
