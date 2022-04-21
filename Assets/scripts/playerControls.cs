@@ -17,7 +17,10 @@ public class playerControls : MonoBehaviour
     private Vector3 upandDown;
     private bool upKeyPressed = false;
     private bool downKeyPressed = false;
-    
+
+
+    GameObject bullet;
+    float bulletVelocity = 100f;
     
 
     // Update is called once per frame
@@ -59,9 +62,16 @@ public class playerControls : MonoBehaviour
         }
         upKeyPressed = false;
         downKeyPressed = false;
-        
-    }// end update
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+         //  GameObject bullet = Instantiate(bullet  , transform.position,
+         //                                          transform.rotation);
+         // bullet.GetComponent<Rigidbody>().AddRelativeForce(new Vector3
+         //                                       (0, bulletVelocity, 0));
+        }
+}// end update
 
+    
     private void PointToMouse()
     {
         movedir = Vector3.MoveTowards(transform.position, GetWorldPosition(), maxSpeed * Time.deltaTime);
